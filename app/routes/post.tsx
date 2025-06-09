@@ -2,7 +2,6 @@ import { use } from "react";
 import type { Route } from "./+types/post";
 
 const posts = import.meta.glob("../posts/*.mdx");
-console.log("posts", posts);
 
 export function meta({}: Route.MetaArgs) {
   return [
