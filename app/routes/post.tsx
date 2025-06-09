@@ -29,7 +29,7 @@ export default function Post({ params: { slug } }: Route.ComponentProps) {
   const Component = mod.default;
 
   return (
-    <main>
+    <main className="[&>h1]:text-2xl container mx-auto">
       <Component />
     </main>
   );
