@@ -1,10 +1,14 @@
 import { useState } from "react";
 
+import "./counter.css";
+
 export function Counter() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="flex flex-col items-center justify-center gap-4">
+    <div
+      className={`flex flex-col items-center justify-center gap-4 counter`}
+    >
       <h1 className="text-2xl">Counter</h1>
       <p className="text-lg">Count: {count}</p>
       <button
